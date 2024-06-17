@@ -1,0 +1,130 @@
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#image {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(6px 7px 10px #000000);
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 290px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 6px 14px 2px rgba(154, 154, 154, 0.372);
+    border-radius: 12px;
+}
+.box input {
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    width: 70%;
+    height: 12%;
+    padding-left: 9px;
+    color: rgb(110, 110, 110);
+    font-weight: 500;
+    font-size: 15px;
+}
+input[type="text"]:focus {
+    outline: none;
+}
+
+.box h3 {
+    color: #282828;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+#cek:hover {
+    transform: scale(1.05);
+}
+#reset:hover {
+    transform: scale(1.05);
+}
+
+#cek {
+    width: 55%;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgb(42, 202, 255);
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+#reset {
+    width: 75px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgb(42, 202, 255);
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#nama {
+    margin: 9px 0 6px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #282828;
+}
+#hasilkhodam {
+    margin: 0;
+    font-size: 23px;
+    color: rgb(0, 191, 255);
+}
+
+
+p {
+    margin: 5px 0 5px;
+    color: red;
+}
